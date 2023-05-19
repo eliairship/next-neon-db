@@ -1,6 +1,8 @@
 name: Staging Flow
 env:
   DATABASE_URL: ${{ secrets.STAGING_DATABASE_URL }}
+  DIRECT_URL: ${{ secrets.STAGING_DIRECT_URL }}
+  SHADOW_DATABASE_URL: ${{ secrets.STAGING_SHADOW_DATABASE_URL }}
 on:
   push:
     branches:
